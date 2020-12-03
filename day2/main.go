@@ -25,7 +25,6 @@ func parsePasswordCheck(input string) (*PasswordCheck, error) {
 
 	criteria := strings.Split(splitted[0], " ")
 	bounds := strings.Split(criteria[0], "-")
-
 	lowerBound, _ := strconv.Atoi(bounds[0])
 	upperBound, _ := strconv.Atoi(bounds[1])
 
