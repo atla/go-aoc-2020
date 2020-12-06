@@ -55,19 +55,18 @@ type Slope struct {
 }
 
 func part2(input []string) {
+
 	m := Map{
 		data:   input,
 		width:  len(input[0]),
 		height: len(input),
 	}
-
 	counter := func(pos string) int {
 		if pos == "#" {
 			return 1
 		}
 		return 0
 	}
-
 	slopes := []Slope{
 		{1, 1},
 		{3, 1},
@@ -78,7 +77,6 @@ func part2(input []string) {
 	trees := []int{0, 0, 0, 0, 0}
 
 	for i, s := range slopes {
-
 		t := Toboggan{
 			x: 0,
 			y: 0,
@@ -87,7 +85,6 @@ func part2(input []string) {
 			},
 			counter: counter,
 		}
-
 		for t.y < m.height {
 			trees[i] += t.counter(m.pos(t.x, t.y))
 			t.x, t.y = t.slope(t.x, t.y)
@@ -95,7 +92,6 @@ func part2(input []string) {
 	}
 
 	product := trees[0]
-
 	for _, v := range trees[1:] {
 		product *= v
 	}
