@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="599eec0e-cbe7-4b33-b635-9dde53e2c5d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day7/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day7/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day7/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +152,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/day7/main.go</url>
-          <line>64</line>
+          <line>88</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>

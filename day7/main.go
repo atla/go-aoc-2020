@@ -13,12 +13,36 @@ type Bag struct {
 	Contains []BagAmount
 }
 
+func (b Bag) ContainsBagsAmount(bags []Bag) int {
+	count := 1
+	for _, ba := range b.Contains {
+
+		bb := findBag(bags, ba.Bag.ID)
+
+		count += ba.Amount * bb.ContainsBagsAmount(bags)
+	}
+	return count
+}
+
 type BagAmount struct {
 	Bag    Bag
 	Amount int
 }
 type BagHolder struct {
 	BH map[string]bool
+}
+
+func findBag(bags []Bag, id string) Bag {
+
+	for _, b := range bags {
+		if b.ID == id {
+			return b
+		}
+	}
+
+	return Bag{
+		ID: "",
+	}
 }
 
 func (b Bag) String() string {
@@ -58,11 +82,19 @@ func main() {
 
 		findBagHolders("shiny gold", bags, &bagHolder)
 
-		for k,_ := range bagHolder.BH {
+		for k, _ := range bagHolder.BH {
 			fmt.Printf("A [%s] bag can hold a [%s] bag\n", k, "shiny gold")
 		}
 
-		fmt.Printf ("Overall there are %d bags that can hold the bag\n", len(bagHolder.BH))
+		fmt.Printf("Overall there are %d bags that can hold the bag\n", len(bagHolder.BH))
+
+		fmt.Println("--- Part 2 ---")
+
+		for _, b := range bags {
+			if b.ID == "shiny gold" {
+				fmt.Printf("A single shiny gold bag contains %d bags\n", b.ContainsBagsAmount(bags)-1)
+			}
+		}
 
 	}
 }
