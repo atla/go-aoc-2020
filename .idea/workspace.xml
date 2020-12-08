@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="599eec0e-cbe7-4b33-b635-9dde53e2c5d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day6/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day7/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day7/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day7/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/day7/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +49,20 @@
       <recent name="$PROJECT_DIR$/day2" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go 2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="go-aoc-2020" />
-      <working_directory value="$PROJECT_DIR$/day2" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/day2/main.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build main.go 7">
     <configuration name="go build main.go 6" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="go-aoc-2020" />
       <working_directory value="$PROJECT_DIR$/day6" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/day5/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go 7" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go-aoc-2020" />
+      <working_directory value="$PROJECT_DIR$/day7" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/day7/main.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -94,18 +92,18 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go day3" />
-      <item itemvalue="Go Build.go build main.go 2" />
       <item itemvalue="Go Build.go build main.go day 4" />
       <item itemvalue="Go Build.go build main.go 6" />
       <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build main.go 7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go 7" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go 6" />
         <item itemvalue="Go Build.go build main.go day 4" />
         <item itemvalue="Go Build.go build main.go day3" />
-        <item itemvalue="Go Build.go build main.go 2" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +150,11 @@
           <url>file://$PROJECT_DIR$/day6/main.go</url>
           <line>53</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/day7/main.go</url>
+          <line>64</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
